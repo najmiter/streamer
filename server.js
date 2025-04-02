@@ -56,7 +56,7 @@ let ffmpegProcess = null;
 let currentTimestamp = 0;
 let timestampInterval = null;
 
-function startStream(seekPosition = 400) {
+function startStream(seekPosition = 0) {
   if (timestampInterval) {
     clearInterval(timestampInterval);
   }
