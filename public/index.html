@@ -384,7 +384,6 @@
         const pauseBtn = document.getElementById('pauseBtn');
         const resumeBtn = document.getElementById('resumeBtn');
 
-        // Reset indicator classes
         statusIndicator.className = 'status-indicator';
 
         if (data.paused) {
@@ -452,7 +451,6 @@
         document.getElementById('rtmpUrl').textContent = `rtmp://${hostname}:${rtmpPort}/live/stream`;
       }
 
-      // Add click-to-copy functionality
       function addCopyFunctionality() {
         const urlValues = document.querySelectorAll('.url-value');
         urlValues.forEach((urlValue) => {
@@ -470,12 +468,10 @@
         });
       }
 
-      // Initialize
       initializeUrls();
       addCopyFunctionality();
       refreshStatus();
 
-      // Auto-refresh status every 2 seconds
       setInterval(refreshStatus, 2000);
     </script>
   </body>
