@@ -1,13 +1,16 @@
 {
   "name": "streamer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test-ffmpeg": "ffmpeg -version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "High-performance Full HD video streaming server optimized for localhost",
   "dependencies": {
     "node-media-server": "4.0.12",
     "express": "5.1.0"
